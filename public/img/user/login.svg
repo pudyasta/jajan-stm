@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="433.001" height="269" viewBox="0 0 433.001 269">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.178" y1="0.101" x2="1" y2="1.14" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#c4007c"/>
+      <stop offset="1" stop-color="#eb18f7"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_108" data-name="Group 108" transform="translate(-927 -203)">
+    <rect id="Rectangle_254" data-name="Rectangle 254" width="420" height="267" rx="6" transform="translate(927 203)" fill="url(#linear-gradient)"/>
+    <path id="Intersection_4" data-name="Intersection 4" d="M120.849,196.977a151.9,151.9,0,0,1-54.12-22.395,151.959,151.959,0,0,1-22.4-18.175A150.544,150.544,0,0,1,25.848,134.38,148.156,148.156,0,0,1,11.894,109.1,146.817,146.817,0,0,1,9.18,0h76.4A83.907,83.907,0,0,0,67.954,51.55c0,46.378,37.586,84.109,83.784,84.109A83.1,83.1,0,0,0,200,120.268v71.875a152.619,152.619,0,0,1-18.146,4.833,155.351,155.351,0,0,1-61.006,0Z" transform="translate(1160 203)" fill="rgba(255,255,255,0.16)"/>
+    <path id="Exclusion_7" data-name="Exclusion 7" d="M169,167H98.708V68.588H0V0H169V167Z" transform="translate(927 305)" fill="#fff" opacity="0.17"/>
+  </g>
+</svg>

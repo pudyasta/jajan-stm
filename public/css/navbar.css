@@ -1,0 +1,172 @@
+/* add */
+.iconify {
+    font-size: 20px;
+}
+.fav-mess {
+    text-align: center;
+    width: 54px;
+    line-height: 15px;
+    font-size: 13px;
+}
+.ic {
+    margin-top: -10px;
+}
+
+.navbar {
+    background-color: #f6f6f8;
+    border-bottom: 1px solid #dedede;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #c4007c;
+    margin: auto;
+    text-align: center;
+    margin-top: 5px;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: rgba(255, 20, 146, 0.5);
+}
+.navbar-light .navbar-nav .nav-link:focus {
+    color: rgba(255, 20, 146, 0.5);
+}
+
+.navbar-light .btn-cat {
+    background-color: transparent;
+    color: #000;
+    border-radius: 10px;
+}
+.navbar-light .btn-cat:hover {
+    background-color: transparent;
+    text-decoration: none;
+    color: #000;
+    border-radius: 10px;
+}
+
+.navbar-light .btn-cat .iconify {
+    color: #c4007c;
+    font-size: 25px;
+}
+
+.navbar-brand img {
+    border-right: 3px solid #ddd;
+    padding-right: 20px;
+    width: 140px;
+}
+
+.navbar-light .navbar-nav .btn-cart {
+    background-color: rgba(196, 0, 124, 0.1);
+    border: 2px solid rgb(196, 0, 124);
+    margin: 3px 7px 0 0;
+    border-radius: 10px;
+}
+.navbar-light .navbar-nav .btn-cart:hover {
+    transition: 0.3s;
+    color: #fff;
+    background-color: rgb(221, 11, 123);
+    border: 2px solid rgb(196, 0, 124);
+    margin: 3px 7px 0 0;
+    border-radius: 10px;
+}
+.navbar-light .navbar-nav .btn-cart:focus {
+    transition: 0.3s;
+    color: #fff;
+    background-color: rgb(221, 11, 123);
+    border: 2px solid rgb(196, 0, 124);
+    margin: 3px 7px 0 0;
+    border-radius: 10px;
+}
+.navbar-light .navbar-nav .btn-login {
+    height: 42px;
+    width: 100%;
+    background-color: rgb(196, 0, 124);
+    border: 2px solid rgb(196, 0, 124);
+    margin: 3px 0px 0 0px;
+    border-radius: 10px;
+    color: #fff;
+    font-size: 14px;
+    font-weight: bold;
+    box-shadow: 0px 3px 3px #eb18f742;
+    display: block;
+    bottom: 0;
+}
+
+.navbar-light .navbar-nav .btn-login:hover {
+    background-color: rgb(221, 11, 123);
+    color: #fff;
+    border-radius: 10px;
+}
+
+.navbar-light .navbar-nav .btn-login:focus {
+    background-color: rgb(221, 11, 123);
+    color: #fff;
+    border-radius: 10px;
+}
+.btn-sub .iconify {
+    color: #c4007c;
+}
+.cari input[type="text"] {
+    border: 1px solid #eded;
+    width: 100%;
+    padding-right: 123px;
+}
+
+.cari .input-group-prepend {
+    position: absolute;
+    right: 3px;
+}
+.cari .iconify {
+    font-size: 25px;
+}
+
+.login-header {
+    background-size: cover;
+    height: 179px;
+    width: 100%;
+    display: flex;
+    background-image: url(/img/user/login.svg);
+}
+.display-5 {
+    margin: auto;
+    color: #fff;
+    font-family: "SF Display";
+}
+
+.login-drop {
+    height: 500px;
+    width: 100%;
+}
+.login-drop input {
+    width: 100%;
+}
+
+.btn-sub-login {
+    height: 48px;
+    width: 100%;
+    background-color: rgb(196, 0, 124);
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: bold;
+}
+.dropdown-menu.login-drop {
+    margin: auto;
+}
+@media (min-width: 992px) {
+    .dropdown-menu.login-drop {
+        position: relative;
+        right: 0;
+        left: auto;
+    }
+    .btn-sub-login {
+        position: relative;
+    }
+    .login-drop {
+        height: 500px;
+        width: 300px;
+    }
+    .btn-login {
+        margin: 3px 0px 0 10px;
+    }
+}

@@ -1,0 +1,12 @@
+Panduan Pengembang : 
+	Mengenai penggunaan ikon :
+	repo : <script src="https://code.iconify.design/1/1.0.6/iconify.min.js"></script>
+	1. ikon keranjang : <span class="iconify" data-icon="feather:shopping-cart" data-inline="false" style="color: #C4007C;></span>
+	2. ikon hati : <span class="iconify" data-icon="bi:heart" data-inline="false" style="color: #C4007C;></span>
+	3. Ikon pesan : <span class="iconify" data-icon="bi:chat-square-dots" data-inline="false" style="color: #C4007C;"></span>
+
+	Mengenai kartu kategori
+	overlay #000 20%
+
+	font utama san francisco+objectivity . sambil jalan tak cariin yang free. udah terlanjur nyaman susah move on hehe
+	nyari font : https://gist.github.com/AndrewBarba/2c0f6612ceef30f5f55d 
