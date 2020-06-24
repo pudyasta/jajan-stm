@@ -1,9 +1,72 @@
-* {
-    font-family: "SF Display";
-}
-
 .carousel-indicators li {
     width: 10px;
     height: 10px;
     border-radius: 50%;
+}
+
+/* Footer */
+.foter {
+    margin: 0px;
+    background-color: #f6f6f8;
+}
+.footer-logo {
+    margin-left: 75px;
+    margin-bottom: 10px;
+}
+.footer-logo img {
+    height: 30px;
+    width: 120px;
+    margin: 15px;
+}
+ul {
+    margin-left: 50px;
+    margin-bottom: 40px;
+}
+ul.akhir {
+    margin-right: 50px;
+}
+ul li {
+    margin-top: 5px;
+    list-style: none;
+}
+.foter ul li a {
+    text-decoration: none;
+    color: #0000008a;
+    opacity: 80%;
+    font-family: "SF Pro Display";
+}
+.foter ul li a:hover {
+    color: #c4007c;
+}
+ul li h5 {
+    color: #0000008a;
+    font-size: 1rem;
+    margin-bottom: 15px;
+    font-family: "SF Pro Display";
+    font-weight: bold;
+}
+ul li p.a {
+    color: #0000008c;
+    opacity: 77%;
+    font-family: "SF Pro Display";
+}
+ul li h5.b {
+    margin-top: 35px;
+    font-family: "SF Pro Display";
+    font-weight: bold;
+}
+ul li p {
+    color: #c4007c;
+    font-family: "SF Pro Display";
+}
+ul li p.akhir {
+    color: #c4007c;
+    opacity: 58%;
+    margin-top: 20px;
+    font-family: "SF Pro Display";
+}
+.foter .iconify {
+    width: 40px;
+    height: 40px;
+    color: #000000;
 }
