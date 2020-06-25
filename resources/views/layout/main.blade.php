@@ -73,8 +73,8 @@
                                     <input type=" password" class="form-control mt-2" id="exampleDropdownFormPassword1" placeholder="Password">
                                     <button type="submit" class="btn-sub-login mt-3">Masuk</button>
                                 </form>
-                                <p class="text-center mt-4">Belum punya akun?</p>
-                                <a class="nav-link btn-cart px-3" href="#" style="border: none;">Daftar</a>
+                                <p class="text-center mt-4" style="color: #000;">Belum punya akun?</p>
+                                <a class="nav-link btn-cart px-3" href="#" style="border: none; border-radius:4px;">Daftar</a>
                             </div>
                         </div>
                     </li>

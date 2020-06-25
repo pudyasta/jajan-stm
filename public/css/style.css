@@ -4,62 +4,95 @@
     border-radius: 50%;
 }
 
+/* Etalase */
+
+.header-etalse {
+    border-top: 1px solid #ddd;
+}
+.btnhd a {
+    text-decoration: none;
+    color: #c4007c;
+    font-family: "SF Pro Display";
+    font-weight: bold;
+    vertical-align: middle;
+    border-radius: 10px;
+}
+
+.sortbtn {
+    background-color: #c4007c2e;
+    color: #c4007c;
+}
+
+.filter {
+    background-color: #c4007c2e;
+    color: #c4007c;
+}
+
+.produk a {
+    text-decoration: none;
+}
+.card img {
+    border-radius: 5px;
+    height: 190px !important;
+}
+.card-body {
+    margin-left: -20px;
+    margin-right: -20px;
+}
+.card-body h6 {
+    color: black;
+    font-family: "SF Pro Display";
+}
+.card-body h5 {
+    color: #c4007c;
+    font-family: "SF Pro Display";
+    font-weight: bold;
+}
+.card-body p {
+    color: black;
+    opacity: 47%;
+    font-size: 0.9rem;
+    margin-bottom: 0px;
+}
+
+.ngelink a {
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    float: right;
+    color: #c4007c;
+}
+
 /* Footer */
 .foter {
-    margin: 0px;
     background-color: #f6f6f8;
 }
-.footer-logo {
-    margin-left: 75px;
-    margin-bottom: 10px;
-}
+
 .footer-logo img {
-    height: 30px;
     width: 120px;
-    margin: 15px;
 }
-ul {
-    margin-left: 50px;
-    margin-bottom: 40px;
-}
-ul.akhir {
-    margin-right: 50px;
-}
-ul li {
-    margin-top: 5px;
+
+.foter li {
     list-style: none;
 }
-.foter ul li a {
+.foter li a {
     text-decoration: none;
     color: #0000008a;
     opacity: 80%;
     font-family: "SF Pro Display";
 }
-.foter ul li a:hover {
+.foter li a:hover {
     color: #c4007c;
 }
-ul li h5 {
+.sub-title-foot {
     color: #0000008a;
     font-size: 1rem;
     margin-bottom: 15px;
     font-family: "SF Pro Display";
     font-weight: bold;
 }
-ul li p.a {
-    color: #0000008c;
-    opacity: 77%;
-    font-family: "SF Pro Display";
-}
-ul li h5.b {
-    margin-top: 35px;
-    font-family: "SF Pro Display";
-    font-weight: bold;
-}
-ul li p {
-    color: #c4007c;
-    font-family: "SF Pro Display";
-}
-ul li p.akhir {
+
+p.akhir {
     color: #c4007c;
     opacity: 58%;
     margin-top: 20px;

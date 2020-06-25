@@ -129,7 +129,8 @@
 .display-5 {
     margin: auto;
     color: #fff;
-    font-family: "SF Display";
+    font-weight: bold;
+    font-family: "SF Pro Display";
 }
 
 .login-drop {
