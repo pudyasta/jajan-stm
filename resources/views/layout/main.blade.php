@@ -61,22 +61,43 @@
 
                     <li class="nav-item btn-group" style="display: block;">
 
+                        @if(!isset($_SESSION))
                         <button class="btn-login px-4" data-toggle="dropdown">Masuk</button>
 
                         <div class="dropdown-menu login-drop mt-3">
                             <div class="container" style="display: block;">
-                                <div class="login-header">
+                                <div class="login-header pr-1">
                                     <h3 class="display-5">Masuk</h3>
                                 </div>
-                                <form action="" method="" class="mt-4">
-                                    <input type="text" class="form-control mt-2" id="exampleDropdownFormEmail1" placeholder="Username">
-                                    <input type=" password" class="form-control mt-2" id="exampleDropdownFormPassword1" placeholder="Password">
+                                <form action="/login" method="post" class="mt-4">
+                                    @csrf
+                                    <input type="text" class="form-control mt-2" name="  username" id="exampleDropdownFormEmail1" placeholder="Username">
+                                    <input type="password" class="form-control mt-2" id="exampleDropdownFormPassword1" placeholder="Password" name="password">
                                     <button type="submit" class="btn-sub-login mt-3">Masuk</button>
                                 </form>
                                 <p class="text-center mt-4" style="color: #000;">Belum punya akun?</p>
-                                <a class="nav-link btn-cart px-3" href="#" style="border: none; border-radius:4px;">Daftar</a>
+                                <a class="nav-link btn-cart px-3" href="/daftar" style="border: none; border-radius:4px;">Daftar</a>
                             </div>
                         </div>
+                        @else
+                        <a href="" data-toggle="dropdown">
+                            <img src="/img/user/ice.jpg" alt="" class=" rounded-circle shadow-sm ml-3" width="50px">
+                        </a>
+                        <div class="dropdown-menu login-drop user mt-3">
+                            <div class="container text-center" style="display: block;">
+                                <img src="/img/user/ice.jpg" alt="" class=" rounded-circle shadow" width="150px">
+                                <h4 class="mt-3">Ice Bear</h4>
+                            </div>
+                            <div class="mt-3">
+                                <a class="dropdown-item" href="#">Profil</a>
+                                <a class="dropdown-item" href="#">Keranjang Belanja</a>
+                                <a class="dropdown-item" href="#">Barang Jualan</a>
+                                <div class="container">
+                                    <a class=" btn btn-sub-logout mt-4 py-2" href="#">Logout</a>
+                                </div>
+                            </div>
+                        </div>
+                        @endif
                     </li>
                 </ul>
             </div>

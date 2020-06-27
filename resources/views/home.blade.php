@@ -50,10 +50,10 @@
         </div>
     </div>
     <!-- Lagi rame dan banyak yang menikmati -->
-    <div class="container justify-content-around">
-        <div class="row row-cols-5">
+    <div class="container">
+        <div class="row ">
             <?php for ($i = 0; $i < 5; $i++) : ?>
-                <div class="col-sm">
+                <div class="col-sm d-flex justify-content-center">
                     <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
                         <a href="">
                             <img src="/img/etalase/4.jpg" class="card-img-top" alt="...">
@@ -84,9 +84,9 @@
         <div class="header-etalse mt-4">
             <h3 class="my-3">Makanan enak yang wajib dicobain</h3>
         </div>
-        <div class="row row-cols-5">
+        <div class="row">
             <?php for ($i = 0; $i < 5; $i++) : ?>
-                <div class="col">
+                <div class="col-sm d-flex justify-content-center">
                     <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
                         <a href="">
                             <img src="/img/etalase/4.jpg" class="card-img-top" alt="...">
@@ -118,9 +118,9 @@
         <div class="header-etalse">
             <h3 class="my-3">Biar muka tambah glowing</h3>
         </div>
-        <div class="row row-cols-5">
+        <div class="row">
             <?php for ($i = 0; $i < 5; $i++) : ?>
-                <div class="col-sm">
+                <div class="col-lg d-flex justify-content-center">
                     <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
                         <a href="">
                             <img src="/img/etalase/75e3633758052fde98e90a9f0b6613d9.jpg" class="card-img-top" alt="...">

@@ -14,4 +14,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('/comic', 'ComicController@index');
+Route::get('/daftar', function () {
+    return view('daftar');
+});

@@ -35,10 +35,7 @@
     border-radius: 5px;
     height: 190px !important;
 }
-.card-body {
-    margin-left: -20px;
-    margin-right: -20px;
-}
+
 .card-body h6 {
     color: black;
     font-family: "SF Pro Display";
