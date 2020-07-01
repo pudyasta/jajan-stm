@@ -12,7 +12,15 @@
 .btn-back .iconify:hover .btn-back:hover{
     background-color: #c4007c;
     color: white;
-
+}
+.img-dftr{
+    text-align: center;
+    margin-top: 70px;
+}
+.img-dftr img{
+    width: 100%;
+    max-width: 497px;
+    height: auto;
 }
 .btn-back .iconify {
     color: #c4007c;
@@ -26,12 +34,14 @@
     font-family: "SF Pro Display";
     font-weight: bolder;
 }
-.isi-daftar{
+
+.judul-item{
+    margin: auto 70px;
     color: black;
     opacity: 60%;
     font-family: "SF Pro Display";
 }
-input[type=text], input[type=password] {
+.daftar input[type=text], input[type=password] {
     margin: 5px auto;
     width: 100%;
     padding: 10px;
@@ -64,27 +74,34 @@ input[type=text], input[type=password] {
 }
 
 .form-card {
-    text-align: left
+    text-align: center;
 }
-
+#msform {
+    margin: auto 30px;
+    float: center;
+}
 #msform fieldset:not(:first-of-type) {
     display: none
+}
+.daftar{
+    float: center;
 }
 
 #msform input,
 #msform textarea {
     padding: 8px 15px 8px 15px;
-    border: 1px solid #ccc;
-    border-radius: 0px;
-    margin-bottom: 25px;
+    border: 1px solid #dedede;
+    border-radius: 10px;
+    margin-bottom: 15px;
     margin-top: 2px;
-    width: 100%;
+    max-width: 335px;
     box-sizing: border-box;
-    font-family: montserrat;
+    font-family: "SF Pro Display";
     color: #2C3E50;
-    background-color: #ECEFF1;
+    background-color: #ffffff;
     font-size: 16px;
-    letter-spacing: 1px
+    letter-spacing: 1px;
+    float: center;
 }
 
 #msform input:focus,
@@ -97,58 +114,27 @@ input[type=text], input[type=password] {
 }
 
 #msform .action-button {
-    width: 100px;
-    background: #673AB7;
+    width: 100%;
+    background: #c4007c;
     font-weight: bold;
     color: white;
     border: 0 none;
-    border-radius: 0px;
+    border-radius: 10px;
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 0px 10px 5px;
-    float: right
+    float: center
 }
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-    background-color: #311B92
-}
-
-#msform .action-button-previous {
-    width: 100px;
-    background: #616161;
-    font-weight: bold;
-    color: white;
-    border: 0 none;
-    border-radius: 0px;
-    cursor: pointer;
-    padding: 10px 5px;
-    margin: 10px 5px 10px 0px;
-    float: right
-}
-
-#msform .action-button-previous:hover,
-#msform .action-button-previous:focus {
-    background-color: #000000
+    background-color: #c4007c
 }
 
 .card {
     z-index: 0;
     border: none;
     position: relative
-}
-
-.fs-title {
-    font-size: 25px;
-    color: #673AB7;
-    margin-bottom: 15px;
-    font-weight: normal;
-    text-align: left
-}
-
-.purple-text {
-    color: #673AB7;
-    font-weight: normal
 }
 
 .steps {
@@ -159,19 +145,15 @@ input[type=text], input[type=password] {
     text-align: right
 }
 
-.fieldlabels {
-    color: gray;
-    text-align: left
-}
-
 #progressbar {
     margin-bottom: 30px;
     overflow: hidden;
-    color: lightgrey
+    color: lightgrey;
+    text-align: center;
 }
 
 #progressbar .active {
-    color: #673AB7
+    color: #c4007c
 }
 
 #progressbar li {
@@ -183,32 +165,33 @@ input[type=text], input[type=password] {
     font-weight: 400
 }
 
-#progressbar #account:before {
-    font-family: FontAwesome;
+#progressbar #daftar:before {
+    font-family: "SF Pro Display";
     content: "1"
 }
 
-#progressbar #personal:before {
-    font-family: FontAwesome;
+#progressbar #konfirmasi:before {
+    font-family: "SF Pro Display";
     content: "2"
 }
 
-#progressbar #confirm:before {
-    font-family: FontAwesome;
+#progressbar #selesai:before {
+    font-family: "SF Pro Display";
     content: "3"
 }
 
 #progressbar li:before {
-    width: 50px;
-    height: 50px;
-    line-height: 45px;
+    width: 25px;
+    height: 25px;
+    line-height: 22px;
     display: block;
-    font-size: 20px;
+    font-size: 15px;
+    font-weight: bold;
     color: #ffffff;
     background: lightgray;
     border-radius: 50%;
-    margin: 0 auto 10px auto;
-    padding: 2px
+    margin: 13px auto 0 auto;
+    padding: 1px
 }
 
 #progressbar li:after {
@@ -224,12 +207,41 @@ input[type=text], input[type=password] {
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-    background: #673AB7
+    background: #c4007c
 }
 
+.daftar .kirim-kode{
+    text-decoration: none;
+    color: #c4007c;
+    margin-right: 72px;
+    text-align: right;
+    margin-top: -15px;
+}
+.daftar .text-lainnya{
+    text-decoration: none;
+    color: #85717e;
+    margin-left: 72px;
+    text-align: left;
+}
+.custom-control{
+    position: relative;
+    display: block;
+    min-height: 1.5rem;
+    padding-left: 2rem;
+}
+.info-proses{
+    text-align: center;
+}
 
-
-.fit-image {
-    width: 100%;
-    object-fit: cover
+@media (max-width: 576px){
+    .daftar .kirim-kode{
+        margin-right: 30px;
+    }
+    .daftar .text-lainnya{
+        margin-left: 30px;
+    }
+    .img-dftr{
+        margin-top: 20px;
+        margin-bottom: 10px;
+    }
 }

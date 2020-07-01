@@ -37,33 +37,7 @@ $(document).ready(function(){
     setProgressBar(++current);
     });
     
-    $(".previous").click(function(){
-    
-    current_fs = $(this).parent();
-    previous_fs = $(this).parent().prev();
-    
-    //Remove class active
-    $("#progressbar li").eq($("fieldset").index(current_fs)).removeClass("active");
-    
-    //show the previous fieldset
-    previous_fs.show();
-    
-    //hide the current fieldset with style
-    current_fs.animate({opacity: 0}, {
-    step: function(now) {
-    // for making fielset appear animation
-    opacity = 1 - now;
-    
-    current_fs.css({
-        'display': 'none',
-        'position': 'relative'
-        });
-        previous_fs.css({'opacity': opacity});
-        },
-        duration: 500
-        });
-        setProgressBar(--current);
-    });
+  
     
     function setProgressBar(curStep){
         var percent = parseFloat(100 / steps) * curStep;
