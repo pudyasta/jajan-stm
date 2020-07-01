@@ -32,14 +32,84 @@
 </div>
 
 
+<div class="container mt-4 py-4">
+    <h4 class="sub-heading-section my-3">Kategori</h4>
+    <div class="row mt-3">
+        <div class="col-lg">
+            <a href="" class="btn btn-cat-section  py-2 ">
+                Fashion<span class="iconify float-right" data-icon="ic:round-navigate-next" data-inline="false" style="font-size: 25px;"></span>
+            </a>
+            <a href="" class="btn btn-cat-section py-2  mt-2">
+                Makanan<span class="iconify float-right" data-icon="ic:round-navigate-next" data-inline="false" style="font-size: 25px;"></span>
+            </a>
+            <a href="" class="btn btn-cat-section py-2  mt-2">
+                Minuman<span class="iconify float-right" data-icon="ic:round-navigate-next" data-inline="false" style="font-size: 25px;"></span>
+            </a>
+            <a href="" class="btn btn-cat-section  py-2 mt-2">
+                Kosmetik<span class="iconify float-right" data-icon="ic:round-navigate-next" data-inline="false" style="font-size: 25px;"></span>
+            </a>
+            <a href="" class="btn btn-cat-section  py-2 mt-2">
+                Aksesoris<span class="iconify float-right" data-icon="ic:round-navigate-next" data-inline="false" style="font-size: 25px;"></span>
+            </a>
+        </div>
+        <div class="col">
+            <div class="card image-cat d-flex">
+                <img src="/img/kategori/pakaian/kaos.png" alt="lanyard">
+                <div class="card-img-overlay d-flex">
+                    <h4 class="card-title align-middle">Kaos</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card image-cat d-flex">
+                <img src="/img/kategori/pakaian/korsa.png" alt="lanyard">
+                <div class="card-img-overlay d-flex">
+                    <h4 class="card-title">Korsa</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card image-cat d-flex">
+                <img src="/img/kategori/pakaian/gelang.png" alt="lanyard">
+                <div class="card-img-overlay d-flex">
+                    <h4 class="card-title">Gelang</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card image-cat d-flex">
+                <img src="/img/kategori/pakaian/hoddie.png" alt="lanyard">
+                <div class="card-img-overlay d-flex">
+                    <h4 class="card-title">Hoddie</h4>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg">
+            <div class="card image-cat d-flex">
+                <img src="/img/kategori/pakaian/jaket.png" alt="lanyard">
+                <div class="card-img-overlay d-flex">
+                    <h4 class="card-title">Jaket</h4>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="ngelink py-4 mt-1">
+        <a href="">
+            Lihat Semua Kategori<span class=" iconify" data-icon="ic:round-navigate-next" data-inline="false"></span>
+        </a>
+    </div>
+
+</div>
 
 
-<div class="produk mt-3">
+<hr>
+
+<div class="produk pb-4 mt-5">
     <div class="container">
         <div class="header-etalse mb-4">
             <div class="row mt-3">
                 <div class="col mt-1">
-                    <h4>Yang Lagi rame dan banyak diminati</h4>
+                    <h4 class="sub-heading-section">Yang Lagi rame dan banyak diminati</h4>
                 </div>
                 <div class="col text-right">
                     <a href="" class="btn sortbtn mr-1 py-2"><span class="iconify mr-1" data-icon="bx:bx-sort-up" data-inline="false"></span>Urutkan</a>
@@ -56,8 +126,8 @@
                 <div class="col-sm d-flex justify-content-center">
                     <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
                         <a href="">
-                            <img src="/img/etalase/4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="/img/etalase/4.jpg" class="card-img-top produk-img" alt="...">
+                            <div class="card-body py-3" style="padding: 0;">
                                 <h6 class="card-title">Kaos Oblong Dengan Bahan Terbaik</h6>
                                 <h5>Rp 60.000</h5>
                                 <p class="card-text"><span class="iconify" data-icon="entypo:shop" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;"></span>Stuizer <span class="iconify" data-icon="bx:bxs-star" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;color: #FFCC00;"></span>4/5</p>
@@ -78,19 +148,21 @@
     </div>
 </div>
 
+<hr>
+
 <!-- Makanan Enak yang wajib dicobain -->
 <div class="produk mt-3">
     <div class="container">
         <div class="header-etalse mt-4">
-            <h3 class="my-3">Makanan enak yang wajib dicobain</h3>
+            <h3 class="my-3 sub-heading-section">Makanan enak yang wajib dicobain</h3>
         </div>
         <div class="row">
             <?php for ($i = 0; $i < 5; $i++) : ?>
                 <div class="col-sm d-flex justify-content-center">
                     <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
                         <a href="">
-                            <img src="/img/etalase/4.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="/img/etalase/4.jpg" class="card-img-top produk-img" alt="...">
+                            <div class="card-body py-3" style="padding: 0;">
                                 <h6 class="card-title">Kaos Oblong Dengan Bahan Terbaik</h6>
                                 <h5>Rp 60.000</h5>
                                 <p class="card-text"><span class="iconify" data-icon="entypo:shop" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;"></span>Stuizer <span class="iconify" data-icon="bx:bxs-star" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;color: #FFCC00;"></span>4/5</p>
@@ -111,20 +183,22 @@
     </div>
 </div>
 
+
+<hr>
 <!-- Biar muka tambah glowing -->
 
 <div class="produk mt-3">
     <div class="container">
         <div class="header-etalse">
-            <h3 class="my-3">Biar muka tambah glowing</h3>
+            <h3 class="my-3 sub-heading-section">Biar muka tambah glowing</h3>
         </div>
         <div class="row">
             <?php for ($i = 0; $i < 5; $i++) : ?>
                 <div class="col-lg d-flex justify-content-center">
                     <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
                         <a href="">
-                            <img src="/img/etalase/75e3633758052fde98e90a9f0b6613d9.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
+                            <img src="/img/etalase/75e3633758052fde98e90a9f0b6613d9.jpg" class="card-img-top produk-img" alt="...">
+                            <div class="card-body py-3" style="padding: 0;">
                                 <h6 class="card-title">Perawat kulitmu</h6>
                                 <h5>Rp 60.000</h5>
                                 <p class="card-text"><span class="iconify" data-icon="entypo:shop" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;"></span>Stuizer <span class="iconify" data-icon="bx:bxs-star" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;color: #FFCC00;"></span>4/5</p>
@@ -145,7 +219,11 @@
     </div>
 </div>
 
-
+<div class="container mt-5 pb-3">
+    <a href="/reg">
+        <img src="/img/banner/foot.png" alt="" class="img-fluid">
+    </a>
+</div>
 
 
 
