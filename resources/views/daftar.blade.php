@@ -10,16 +10,16 @@
         <a class="btn btn-back display-5 px-3" href="#"><span class="iconify" data-icon="ic:round-arrow-back-ios" data-inline="false"></span> Kembali</a>
     </div>
     <div class="row justify-content-center">
-        <div class="col-sm-6 gh">
+        <div class="col-sm-6 border-right">
             <div class="img-dftr justify-content-center">
                 <img src="/img/banner/gambar_lain/undraw_dreamer_gxxi.svg" alt="">
             </div>
         </div>
         
-        <div class="col-sm-6">
+        <div class="col-sm-6  border-left">
         
             <form id="msform" class="justify-content-center">
-                <div class="info-proses">
+                <div class="info-proses justify-content-center">
                     <ul id="progressbar">
                         <li id="daftar" class="active" ></li>
                         <li id="konfirmasi"></li>
@@ -46,7 +46,7 @@
                                 <input type="password" name="cpwd" placeholder="Konfirmasi kata sandi"/>
                             </div>
                         </div> 
-                            <input type="button" name="next" class="next action-button" value="Selanjutnya"/>
+                            <input type="button" name="next" class="next action-button shadow p-3 mb-5" value="Selanjutnya"/>
                     </fieldset>
                     <fieldset>
                         <div class="form-card">
@@ -71,7 +71,7 @@
                                 </div>
                             </div>
                         </div> 
-                            <input type="button" name="next" class="next action-button" value="Selanjutnya" />
+                            <input type="button" name="next" class="next action-button shadow p-3 mb-5" value="Selanjutnya" />
                     </fieldset>
                     
                     <fieldset>
@@ -83,7 +83,7 @@
                             <p class="isi-daftar">Selamat @lastgen! Akun kamu berhasil dibuat, yeayy. Selamat menggunakan Jajan!</p>
                         </div>
                     </div> 
-                            <a href=""><input type="button" name="next" class="next action-button" value="Buka Halaman Beranda" /></a>
+                            <a href=""><input type="button" name="next" class="next action-button shadow p-3 mb-5" value="Buka Halaman Beranda" /></a>
                     </fieldset>
                    
                 </form>
