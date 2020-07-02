@@ -4,7 +4,6 @@
 
 @section('container')
 
-
 <div class="container">
     <div class="back-button text-left">
         <a class="btn btn-back display-5 px-3" href="#"><span class="iconify" data-icon="ic:round-arrow-back-ios" data-inline="false"></span> Kembali</a>
@@ -15,7 +14,6 @@
                 <img src="/img/banner/gambar_lain/undraw_dreamer_gxxi.svg" alt="">
             </div>
         </div>
-        
         <div class="col-sm-6  border-left">
         
             <form id="msform" class="justify-content-center">
@@ -117,6 +115,7 @@
             </div> -->
         </div>
     </div>
+    >>>>>>> refs/remotes/origin/master
 </div>
 
 @endsection()

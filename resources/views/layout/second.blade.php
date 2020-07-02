@@ -16,7 +16,7 @@
 <body>
     <nav class="navbar navbar-expand-lg navbar-light py-3">
         <div class="container">
-            <a class="navbar-brand" href="#"><img src="/img/ikon/logo/png/1.png" alt=""></a>
+            <a class="navbar-brand" href="/"><img src="/img/ikon/logo/png/1.png" alt=""></a>
 
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -32,7 +32,7 @@
 
                     <li class="nav-item">
 
-                        <a class="btn-login px-4 py-2">Masuk</a>
+                        <a class="btn-login px-4 py-2" href="/">Masuk</a>
 
 
 

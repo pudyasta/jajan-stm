@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,6 +15,10 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', 'HomeController@index');
-Route::get('/daftar', function () {
-    return view('daftar');
-});
+
+Route::get('/logout', 'AuthController@logout')->name('logout');
+
+// hanya untuk tamu yg belum auth
+Route::get('/reg', 'AuthController@getRegister')->middleware('guest')->name('register');
+Route::post('/reg', 'AuthController@postLogin');
+Route::post('/register', 'AuthController@postregister')->middleware('guest');
