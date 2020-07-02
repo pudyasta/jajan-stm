@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" href="/css/navbar.css">
-    <link rel="stylesheet" href="/css/daftar.css">
     <link rel="stylesheet" href="/css/font.css">
 
 </head>
@@ -64,7 +63,7 @@
                     <li class="nav-item btn-group" style="display: block;">
 
                         @if (!session()->has('key'))
-                        <button class="btn-login px-4" data-toggle="dropdown">Masuk</button>
+                        <button class="btn-login px-4" data-toggle="dropdown" aria-expanded="true" autofocus>Masuk</button>
 
                         <div class="dropdown-menu login-drop mt-3">
                             <div class="container" style="display: block;">
@@ -73,8 +72,11 @@
                                 </div>
                                 <form action="/reg" method="post" class="mt-4">
                                     @csrf
-                                    <input type="text" class="form-control mt-2" name="email" id="exampleDropdownFormEmail1" placeholder="Enter email" autocomplete="off">
-                                    <input type="password" class="form-control mt-2" id="exampleDropdownFormPassword1" placeholder="Password" name="password" autocomplete="off" value="">
+                                    <input type="text" class="form-control mt-2  @if (session('status')) is-invalid  @endif" name="email" placeholder="Enter email" autocomplete="off">
+                                    <input type="password" class="form-control mt-2 @if (session('status')) is-invalid  @endif" placeholder="Password" name="password" autocomplete="off">
+                                    @if (session('status'))
+                                    {{ session('status') }}
+                                    @endif
                                     <button type="submit" class="btn-sub-login mt-3">Masuk</button>
                                 </form>
                                 <p class="text-center mt-4" style="color: #000;">Belum punya akun?</p>

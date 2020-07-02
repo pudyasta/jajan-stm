@@ -55,7 +55,7 @@ class AuthController extends Controller
                 return redirect('/')->with('alert', 'Password atau Email, Salah !');
             }
         } else {
-            return redirect('/')->with('alert', 'Password atau Email, Salah!');
+            return redirect('/')->with('status', 'Password atau Email, Salah!');
         }
     }
 

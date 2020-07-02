@@ -75,36 +75,7 @@
 
             </form>
 
-            <!-- <div class="form-daftar">
-                <div class="judul-daftar text-center">
-                    <h1>Selamat Datang!</h1>
-                </div>
-                <div class="judul-item text-center">
-                    <p class="isi-daftar">Wah agar kamu bisa menikmati semua layanan Jajan kamu harus masuk dulu ya!</p>
-                </div>
-                <div class="daftar item-center">
-                    <form action="" class="form-daftar">
-                        <div class="form-group col-md">
-                            <input type="text" class="form-control" id="inputAddress" placeholder="Nama lengkap">
-                        </div>
-                        <div class="form-group col-md">
-                            <input type="text" class="form-control" id="inputAddress2" placeholder="Username">
-                        </div>
-                        <div class="form-group col-md">
-                            <input type="password" class="form-control" id="inputAddress2" placeholder="Kata sandi">
-                        </div>
-                        <div class="form-group col-md">
-                            <input type="password" class="form-control" id="inputAddress2" placeholder="Konfirmasi kata sandi">
-                        </div>
-                        <div class="form-group lanjut">
-                            <button type="submit" name="submit" class="">Selanjutnya</button>
-                        </div>
-                    </form>
-                </div>
-            </div> -->
-        </div>
-    </div>
-    >>>>>>> refs/remotes/origin/master
-</div>
 
-@endsection()
+        </div>
+
+        @endsection()

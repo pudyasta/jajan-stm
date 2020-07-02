@@ -1,37 +1,37 @@
-.back-button{
+.back-button {
     margin: 15px;
     text-align: center;
 }
-.back-button .btn-back{
+.back-button .btn-back {
     background-color: #c4007c2e;
     color: #c4007c;
     margin-top: -2px;
     border-radius: 12px;
     text-align: left;
 }
-.btn-back .iconify:hover .btn-back:hover{
+.btn-back .iconify:hover .btn-back:hover {
     background-color: #c4007c;
     color: white;
-
 }
 .btn-back .iconify {
     color: #c4007c;
     font-size: 25px;
 }
-.form-daftar{
+.form-daftar {
     width: 90%;
 }
-.judul-daftar{
+.judul-daftar {
     color: #c4007c;
     font-family: "SF Pro Display";
     font-weight: bolder;
 }
-.isi-daftar{
+.isi-daftar {
     color: black;
     opacity: 60%;
     font-family: "SF Pro Display";
 }
-input[type=text], input[type=password] {
+input[type="text"],
+input[type="password"] {
     margin: 5px auto;
     width: 100%;
     padding: 10px;
@@ -39,17 +39,17 @@ input[type=text], input[type=password] {
     color: black;
     opacity: 70%;
 }
-    
+
 #heading {
     text-transform: uppercase;
-    color: #673AB7;
-    font-weight: normal
+    color: #673ab7;
+    font-weight: normal;
 }
 
 #msform {
     text-align: center;
     position: relative;
-    margin-top: 20px
+    margin-top: 20px;
 }
 
 #msform fieldset {
@@ -60,15 +60,15 @@ input[type=text], input[type=password] {
     width: 100%;
     margin: 0;
     padding-bottom: 20px;
-    position: relative
+    position: relative;
 }
 
 .form-card {
-    text-align: left
+    text-align: left;
 }
 
 #msform fieldset:not(:first-of-type) {
-    display: none
+    display: none;
 }
 
 #msform input,
@@ -81,10 +81,10 @@ input[type=text], input[type=password] {
     width: 100%;
     box-sizing: border-box;
     font-family: montserrat;
-    color: #2C3E50;
-    background-color: #ECEFF1;
+    color: #2c3e50;
+    background-color: #eceff1;
     font-size: 16px;
-    letter-spacing: 1px
+    letter-spacing: 1px;
 }
 
 #msform input:focus,
@@ -92,13 +92,13 @@ input[type=text], input[type=password] {
     -moz-box-shadow: none !important;
     -webkit-box-shadow: none !important;
     box-shadow: none !important;
-    border: 1px solid #673AB7;
-    outline-width: 0
+    border: 1px solid #673ab7;
+    outline-width: 0;
 }
 
 #msform .action-button {
     width: 100px;
-    background: #673AB7;
+    background: #673ab7;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -106,12 +106,12 @@ input[type=text], input[type=password] {
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 0px 10px 5px;
-    float: right
+    float: right;
 }
 
 #msform .action-button:hover,
 #msform .action-button:focus {
-    background-color: #311B92
+    background-color: #311b92;
 }
 
 #msform .action-button-previous {
@@ -124,31 +124,31 @@ input[type=text], input[type=password] {
     cursor: pointer;
     padding: 10px 5px;
     margin: 10px 5px 10px 0px;
-    float: right
+    float: right;
 }
 
 #msform .action-button-previous:hover,
 #msform .action-button-previous:focus {
-    background-color: #000000
+    background-color: #000000;
 }
 
 .card {
     z-index: 0;
     border: none;
-    position: relative
+    position: relative;
 }
 
 .fs-title {
     font-size: 25px;
-    color: #673AB7;
+    color: #673ab7;
     margin-bottom: 15px;
     font-weight: normal;
-    text-align: left
+    text-align: left;
 }
 
 .purple-text {
-    color: #673AB7;
-    font-weight: normal
+    color: #673ab7;
+    font-weight: normal;
 }
 
 .steps {
@@ -156,22 +156,22 @@ input[type=text], input[type=password] {
     color: gray;
     margin-bottom: 10px;
     font-weight: normal;
-    text-align: right
+    text-align: right;
 }
 
 .fieldlabels {
     color: gray;
-    text-align: left
+    text-align: left;
 }
 
 #progressbar {
     margin-bottom: 30px;
     overflow: hidden;
-    color: lightgrey
+    color: lightgrey;
 }
 
 #progressbar .active {
-    color: #673AB7
+    color: #673ab7;
 }
 
 #progressbar li {
@@ -180,22 +180,22 @@ input[type=text], input[type=password] {
     width: 25%;
     float: left;
     position: relative;
-    font-weight: 400
+    font-weight: 400;
 }
 
 #progressbar #account:before {
     font-family: FontAwesome;
-    content: "1"
+    content: "1";
 }
 
 #progressbar #personal:before {
     font-family: FontAwesome;
-    content: "2"
+    content: "2";
 }
 
 #progressbar #confirm:before {
     font-family: FontAwesome;
-    content: "3"
+    content: "3";
 }
 
 #progressbar li:before {
@@ -208,28 +208,26 @@ input[type=text], input[type=password] {
     background: lightgray;
     border-radius: 50%;
     margin: 0 auto 10px auto;
-    padding: 2px
+    padding: 2px;
 }
 
 #progressbar li:after {
-    content: '';
+    content: "";
     width: 100%;
     height: 2px;
     background: lightgray;
     position: absolute;
     left: 0;
     top: 25px;
-    z-index: -1
+    z-index: -1;
 }
 
 #progressbar li.active:before,
 #progressbar li.active:after {
-    background: #673AB7
+    background: #673ab7;
 }
-
-
 
 .fit-image {
     width: 100%;
-    object-fit: cover
+    object-fit: cover;
 }
