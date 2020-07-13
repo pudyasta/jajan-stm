@@ -21,20 +21,20 @@ class AuthController extends Controller
 
     public function postRegister(Request $request)
     {
-        $validatedData = $request->validate([
-            'name' => 'required|unique:users,name|max:255',
-            'email' => 'required',
-            'password' => 'required|min:8',
+        $request->validate([
+            'name' => 'required|max:255',
+            'username' => 'required',
+            'password' => 'required|min:8|confirmed',
         ]);
-
         User::create([
             'name' => $request->name,
-            'email' => $request->email,
+            'username' => $request->username,
+            'email' => "",
             'password' =>  bcrypt($request->password),
         ]);
 
 
-        return redirect('/');
+        return redirect('/reg')->with('status2', "cok");
     }
 
 

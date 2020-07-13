@@ -104,6 +104,69 @@
 
 <hr>
 
+<!--  -->
+<div class="container">
+    <div class="row">
+        <div class="col-sm d-flex justify-content-center">
+            <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
+                <a href="">
+                    <div class="card image-cat d-flex" style="height: 330px;">
+                        <img src="/img/etalase/img/144.svg" alt="lanyard">
+                        <div class="card-img-overlay d-flex">
+                            <h4 class="card-title">Hanya Untukmu</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <?php for ($i = 0; $i < 4; $i++) : ?>
+            <div class="col-sm d-flex justify-content-center">
+                <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
+                    <a href="">
+                        <img src="/img/etalase/4.jpg" class="card-img-top produk-img" alt="...">
+                        <div class="card-body py-3" style="padding: 0;">
+                            <h6 class="card-title">Kaos Oblong Dengan Bahan Terbaik</h6>
+                            <h5>Rp 60.000</h5>
+                            <p class="card-text"><span class="iconify" data-icon="entypo:shop" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;"></span>Stuizer <span class="iconify" data-icon="bx:bxs-star" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;color: #FFCC00;"></span>4/5</p>
+                            <p class="card-text"><span class="iconify" data-icon="bx:bxs-time-five" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;"></span>Close PO pada 12 juni 2020</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        <?php endfor ?>
+    </div>
+
+    <div class="row">
+        <div class="col-sm d-flex justify-content-center">
+            <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
+                <a href="">
+                    <div class="card image-cat d-flex" style="height: 330px;">
+                        <img src="/img/kategori/pakaian/gelang.png" alt="lanyard">
+                        <div class="card-img-overlay d-flex">
+                            <h4 class="card-title">Gelang</h4>
+                        </div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        <?php for ($i = 0; $i < 4; $i++) : ?>
+            <div class="col-sm d-flex justify-content-center">
+                <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
+                    <a href="">
+                        <img src="/img/etalase/4.jpg" class="card-img-top produk-img" alt="...">
+                        <div class="card-body py-3" style="padding: 0;">
+                            <h6 class="card-title">Kaos Oblong Dengan Bahan Terbaik</h6>
+                            <h5>Rp 60.000</h5>
+                            <p class="card-text"><span class="iconify" data-icon="entypo:shop" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;"></span>Stuizer <span class="iconify" data-icon="bx:bxs-star" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;color: #FFCC00;"></span>4/5</p>
+                            <p class="card-text"><span class="iconify" data-icon="bx:bxs-time-five" data-inline="true" data-flip="horizontal" style="width: 15px; height: 15px; margin-right: 5px;"></span>Close PO pada 12 juni 2020</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        <?php endfor ?>
+    </div>
+</div>
+
 <div class="produk pb-4 mt-5">
     <div class="container">
         <div class="header-etalse mb-4">

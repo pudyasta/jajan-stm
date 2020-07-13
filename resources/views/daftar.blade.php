@@ -5,97 +5,94 @@
 @section('container')
 
 <div class="container">
-    <div class="back-button text-left">
-        <a class="btn btn-back display-5 px-3" href="/"><span class="iconify" data-icon="ic:round-arrow-back-ios" data-inline="false"></span> Kembali</a>
-    </div>
+
     <div class="row justify-content-center">
-        <div class="col-sm-6 border-right">
-            <div class="img-dftr justify-content-center">
+        <div class="col-sm-6">
+            <div class="img-dftr d-flex justify-content-center align-middle">
                 <img src="/img/banner/gambar_lain/undraw_dreamer_gxxi.svg" alt="">
             </div>
         </div>
-        <div class="col-sm-6  border-left">
 
-            <form id="msform" class="justify-content-center">
-
-                <fieldset>
-                    <div class="form-card">
-                        <div class="judul-daftar text-center">
-                            <h1>Selamat Datang!</h1>
-                        </div>
-                        <div class="judul-item text-center">
-                            <h6>Wah agar kamu bisa menikmati semua layanan Jajan kamu harus masuk dulu ya!</h6>
-                        </div>
-                        <div class="info-proses justify-content-center">
-                            <ul id="progressbar">
-                                <li id="daftar" class="active"></li>
-                                <li id="konfirmasi"></li>
-                                <li id="selesai"></li>
-                            </ul>
-                        </div>
-                        <div class="daftar justify-content-center">
-                            <input type="text" name="nama" placeholder="Nama lengkap" />
-                            <input type="text" name="uname" placeholder="Username" />
-                            <input type="password" name="pwd" placeholder="Kata sandi" />
-                            <input type="password" name="cpwd" placeholder="Konfirmasi kata sandi" />
-                        </div>
+        <div class="col-sm-6 form-daft mt-4">
+            <div class="first-page" id="msform">
+                <div class="form-card">
+                    <div class=" text-center">
+                        <h1 class="judul-daftar">Selamat Datang!</h1>
+                        <h6 class="judul-item">Wah agar kamu bisa menikmati semua layanan Jajan kamu harus masuk dulu ya!</h6>
                     </div>
-                    <input type="button" name="next" class="next action-button shadow p-3 mb-5" value="Selanjutnya" />
-                </fieldset>
-                <fieldset>
-                    <div class="form-card">
-                        <div class="judul-daftar text-center">
-                            <h1>Sedikit lagi..</h1>
-                        </div>
-                        <div class="judul-item ">
-                            <p style="margin-bottom:0;">Masukan nomor telepon kamu, ini nantinya akan digunakan untuk menghubungi seller dan banyak fungsi pintar</p>
-                        </div>
-                        <div class="info-proses justify-content-center">
-                            <ul id="progressbar">
-                                <li id="daftar" class="active"></li>
-                                <li id="konfirmasi" class="active"></li>
-                                <li id="selesai"></li>
-                            </ul>
-                        </div>
-                        <div class="daftar">
-                            <input type="text" name="email" placeholder="Nomor Telepon" />
-                            <a href=""><small id="emailHelp" class="form-text kirim-kode">Kirim kode verifikasi</small></a>
-
-                            <small id="emailHelp" class="form-text text-lainnya">Masukan kode verifikasi yang dikirim ke nomor kamu</small>
-                            <input type="text" name="uname" placeholder="0-0-0-0" />
-
-                            <div class="custom-control custom-radio custom-control-inline">
-                                <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                                <label class="custom-control-label" for="customRadioInline1">
-                                    <small id="emailHelp" class="form-text radio-input" for="radios">Saya menyetujui segala <a href="">ketentuan dan kebijakan jajan</a></small>
-                                </label>
-                            </div>
-                        </div>
+                    <div class="info-proses justify-content-center">
+                        <ul id="progressbar">
+                            <li id="daftar" class="active"></li>
+                            <li id="konfirmasi"></li>
+                            <li id="selesai"></li>
+                        </ul>
                     </div>
-                    <input type="button" name="next" class="next action-button shadow p-3 mb-5" value="Selanjutnya" />
-                </fieldset>
+                    <form class="daftar justify-content-center   @if (session('status2'))
+                    berhasil
+                    @endif" action="/register" method="post" id="1form" name="form1">
+                        @csrf
+                        <input type="text" class="form-control" name="name" placeholder="Nama lengkap" />
+                        @error('name'){{$message}}@enderror
+                        <input type="text" class="form-control" name="username" placeholder="Username" id="username" />
+                        @error('username'){{$message}}@enderror
+                        <input type="password" class="form-control" name="password" placeholder="Kata sandi" />
+                        <input type="password" class="form-control" name="password_confirmation" placeholder="Konfirmasi kata sandi" />
+                        <button type="submit" class="next action-button submit-1 shadow mb-5">Selanjutnya</button>
+                    </form>
 
-                <fieldset>
-                    <div class="form-card">
-                        <div class="judul-daftar text-center">
-                            <h1>Selesai!</h1>
-                        </div>
-                        <div class="judul-item text-center">
-                            <p style="margin-bottom: 0;">Selamat @lastgen! Akun kamu berhasil dibuat, yeayy. Selamat menggunakan Jajan!</p>
-                        </div>
-                        <div class="info-proses justify-content-center">
-                            <ul id="progressbar">
-                                <li id="daftar" class="active"></li>
-                                <li id="konfirmasi" class="active"></li>
-                                <li id="selesai" class="active"></li>
-                            </ul>
-                        </div>
+                </div>
+
+            </div>
+
+            <div class="second-page">
+                <div class="form-card" id="msform">
+                    <div class=" text-center">
+                        <h1 class="judul-daftar ">Sedikit lagi..</h1>
+                        <p style="margin-bottom:0;" class="judul-item">Masukan nomor telepon kamu, ini nantinya akan digunakan untuk menghubungi seller dan banyak fungsi pintar</p>
                     </div>
-                    <a href=""><input type="button" name="next" class="next action-button shadow p-3 mb-5" value="Buka Halaman Beranda" /></a>
-                </fieldset>
+                    <div class="info-proses justify-content-center">
+                        <ul id="progressbar">
+                            <li id="daftar" class="active"></li>
+                            <li id="konfirmasi" class="active"></li>
+                            <li id="selesai"></li>
+                        </ul>
+                    </div>
+                    <form class="daftar justify-content-center">
+                        <input type="text" class="form-control" name="email" placeholder="Nomor Telepon" />
+                        <a href=""><small id="emailHelp" class="form-text kirim-kode">Kirim kode verifikasi</small></a>
 
-            </form>
+                        <small id="emailHelp" class="form-text text-lainnya">Masukan kode verifikasi yang dikirim ke nomor kamu</small>
+                        <input type="text" class="form-control" name="uname" placeholder="0-0-0-0" />
 
+                        <div class="custom-control custom-radio custom-control-inline">
+                            <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
+                            <label class="custom-control-label" for="customRadioInline1">
+                                <small id="emailHelp" class="form-text radio-input" for="radios">Saya menyetujui segala <a href="">ketentuan dan kebijakan jajan</a></small>
+                            </label>
+                        </div>
+                        <button type="submit" name="submit" class="next action-button shadow mb-5">Selanjutnya</button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="third-page">
+                <div class="form-card" id="msform">
+                    <div class="judul-daftar text-center">
+                        <h1>Selesai!</h1>
+                    </div>
+                    <div class="judul-item text-center">
+                        <p style="margin-bottom: 0;">Selamat @lastgen! Akun kamu berhasil dibuat, yeayy. Selamat menggunakan Jajan!</p>
+                    </div>
+                    <div class="info-proses justify-content-center">
+                        <ul id="progressbar">
+                            <li id="daftar" class="active"></li>
+                            <li id="konfirmasi" class="active"></li>
+                            <li id="selesai" class="active"></li>
+                        </ul>
+                    </div>
+                    <a href=""><input type="button" name="next" class="next action-button shadow mb-5" value="Buka Halaman Beranda" /></a>
+                </div>
+            </div>
 
         </div>
 

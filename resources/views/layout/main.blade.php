@@ -60,23 +60,25 @@
                     </li>
 
 
-                    <li class="nav-item btn-group" style="display: block;">
+                    <li class="nav-item btn-group @if (session('status'))
+                                    show
+                                    @endif" style="display: block;">
 
                         @if (!session()->has('key'))
-                        <button class="btn-login px-4" data-toggle="dropdown" aria-expanded="true" autofocus>Masuk</button>
+                        <button class="btn-login px-4" data-toggle="dropdown" aria-expanded="@if (session('status'))true
+                                    @endif" autofocus>Masuk</button>
 
-                        <div class="dropdown-menu login-drop mt-3">
+                        <div class="dropdown-menu login-drop mt-3 @if (session('status'))
+                                    show
+                                    @endif">
                             <div class="container" style="display: block;">
                                 <div class="login-header pr-1">
                                     <h3 class="display-5">Masuk</h3>
                                 </div>
-                                <form action="/reg" method="post" class="mt-4">
+                                <form action="/reg" method="post" class="mt-4 ">
                                     @csrf
                                     <input type="text" class="form-control mt-2  @if (session('status')) is-invalid  @endif" name="email" placeholder="Enter email" autocomplete="off">
                                     <input type="password" class="form-control mt-2 @if (session('status')) is-invalid  @endif" placeholder="Password" name="password" autocomplete="off">
-                                    @if (session('status'))
-                                    {{ session('status') }}
-                                    @endif
                                     <button type="submit" class="btn-sub-login mt-3">Masuk</button>
                                 </form>
                                 <p class="text-center mt-4" style="color: #000;">Belum punya akun?</p>
