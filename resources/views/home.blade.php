@@ -109,14 +109,28 @@
     <div class="row">
         <div class="col-sm d-flex justify-content-center">
             <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
-                <a href="">
+                
+            <div class="card image-cat d-flex" style="height: 330px;">
+                <!-- <img src="/img/etalase/img/144.svg" alt="lanyard" class="pamflet"> -->
+                <div class="card-body"id="grad1">
+                    <button href="#" class="btn btn-grad btn-md btn-block">Lihat Semua</button>
+                    <h4 class="card-title1">Hanya Untukmu</h4>
+                    <div class="card-title1 polkadot">
+                        <div  id="polkadot"></div>
+                    </div>
+                </div>        
+            </div>
+            
+            
+            <!-- <a href="">
                     <div class="card image-cat d-flex" style="height: 330px;">
-                        <img src="/img/etalase/img/144.svg" alt="lanyard">
+                        <img src="/img/etalase/img/144.svg" alt="lanyard" class="pamflet">
                         <div class="card-img-overlay d-flex">
-                            <h4 class="card-title">Hanya Untukmu</h4>
+                            <h4 class="card-title1">Hanya Untukmu</h4>
+                            <button href="" class="btn card-btn">Lihat Semua</button>
                         </div>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
         <?php for ($i = 0; $i < 4; $i++) : ?>
@@ -139,14 +153,26 @@
     <div class="row">
         <div class="col-sm d-flex justify-content-center">
             <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
-                <a href="">
+                
+            <div class="card image-cat d-flex" style="height: 330px;">
+                <!-- <img src="/img/etalase/img/144.svg" alt="lanyard" class="pamflet"> -->
+                <div class="card-body"id="grad2">
+                    <button href="#" class="btn btn-grad btn-md btn-block">Lihat Semua</button>
+                    <h4 class="card-title1">Hanya Untukmu</h4>
+                    <div class="card-title1 polkadot">
+                        <div  id="polkadot"></div>
+                    </div>
+                </div>        
+            </div>
+            
+            <!-- <a href="">
                     <div class="card image-cat d-flex" style="height: 330px;">
-                        <img src="/img/kategori/pakaian/gelang.png" alt="lanyard">
+                        <img src="/img/etalase/img/Group 145.svg" alt="lanyard">
                         <div class="card-img-overlay d-flex">
                             <h4 class="card-title">Gelang</h4>
                         </div>
                     </div>
-                </a>
+                </a> -->
             </div>
         </div>
         <?php for ($i = 0; $i < 4; $i++) : ?>

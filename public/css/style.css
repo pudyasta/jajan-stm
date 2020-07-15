@@ -34,15 +34,20 @@
 .card.image-cat img {
     height: 100%;
 }
+.card.image-cat.pamflet{
+    height: 120%;
+    width: 120%;
+    margin-top: -20px;
+}
 
-.image-cat ::after {
+.image-cat ::before {
     content: "";
     display: block;
     width: 100%;
     height: 100%;
     position: absolute;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0.15);
+    background-color: rgba(0, 0, 0, 0);
     left: 0;
     bottom: 0;
 }
@@ -55,11 +60,66 @@
     margin: auto 0;
     z-index: 2;
 }
-.card-title::after {
+.card-title::before {
     content: "";
     background-color: transparent;
 }
+.card-title1 {
+    color: #fff;
+    position: relative;
+    font-weight: 800;
+    font-family: "Poppins";
+    left: 0;
+    bottom:  4.5em;
+    margin: auto 0;
+    z-index: 2;
+}
+.card-title1::before {
+    content: "";
+    background-color: transparent;
+}
+#grad1 {
 
+    background: transparent linear-gradient(150deg, #FF77F2D9 0%, #9801bbfc 100%) 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+#grad2 {
+
+    background: transparent linear-gradient(150deg, #bcf39ad9 0%, #00715cfc 100%) 0% 0% no-repeat padding-box;
+    border-radius: 5px;
+}
+
+.btn-grad{
+    background-color: white;
+    opacity: 41%;
+    margin-top: 15.7em;
+
+}
+.btn-grad::before:hover{
+    background-color: white;
+    color: white;
+}
+.polkadot{
+    width: 90px;
+    bottom: 337px;
+    margin-left: 55px;
+}
+.polkadot::after{
+    content: "";
+    background-color: transparent;
+}
+#polkadot{
+    background-image:   radial-gradient(white 20%, transparent 20%),
+                        radial-gradient( white 20%, transparent 20%),
+                        radial-gradient( white 20%, transparent 20%),
+                        radial-gradient( white 20%, transparent 20%);
+    background-position: 0 0, 0px 15px, 15px 0px, 15px 15px;
+    background-size: 30px 30px;
+    height:100px;
+    width: 100%;
+    opacity: 40%;
+    
+}
 /* Etalase */
 
 .btnhd a {
@@ -114,7 +174,6 @@
     float: right;
     color: #c4007c;
 }
-
 /* Footer */
 .foter {
     background-color: #f6f6f8;
@@ -159,5 +218,10 @@ p.akhir {
 @media (min-width: 992px) {
     .card.image-cat {
         margin: 0;
+    }
+}
+@media (max-width: 400px){
+    .polkadot{
+        margin-right: 30px;
     }
 }
