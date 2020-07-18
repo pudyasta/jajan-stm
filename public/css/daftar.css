@@ -1,11 +1,12 @@
-.img-dftr {
-    text-align: center;
-    margin-top: 70px;
+.col-img {
+    display: flex;
 }
-.img-dftr img {
+
+img {
     width: 100%;
-    max-width: 497px;
-    height: auto;
+    position: relative;
+    margin: auto;
+    margin: auto;
 }
 .btn-back .iconify {
     color: #c4007c;
@@ -46,15 +47,8 @@
     margin: auto 30px;
     float: center;
 }
-#msform fieldset:not(:first-of-type) {
-    display: none;
-}
-.daftar {
-    float: center;
-}
 
 #msform input {
-    border: 1px solid #dedede;
     border-radius: 8px;
     margin: 10px auto;
     width: 80%;
@@ -81,14 +75,6 @@
     z-index: 0;
     border: none;
     position: relative;
-}
-
-.steps {
-    font-size: 25px;
-    color: gray;
-    margin-bottom: 10px;
-    font-weight: normal;
-    text-align: right;
 }
 
 #progressbar {

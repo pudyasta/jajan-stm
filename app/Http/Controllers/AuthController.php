@@ -22,8 +22,8 @@ class AuthController extends Controller
     public function postRegister(Request $request)
     {
         $request->validate([
-            'name' => 'required|max:255',
-            'username' => 'required',
+            'name' => 'required|max:255|min:5',
+            'username' => 'required|unique:users|min:5',
             'password' => 'required|min:8|confirmed',
         ]);
         User::create([
@@ -34,7 +34,7 @@ class AuthController extends Controller
         ]);
 
 
-        return redirect('/reg')->with('status2', "cok");
+        return "ok";
     }
 
 

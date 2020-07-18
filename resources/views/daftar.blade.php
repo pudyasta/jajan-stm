@@ -7,10 +7,10 @@
 <div class="container">
 
     <div class="row justify-content-center">
-        <div class="col-sm-6">
-            <div class="img-dftr d-flex justify-content-center align-middle">
-                <img src="/img/banner/gambar_lain/undraw_dreamer_gxxi.svg" alt="">
-            </div>
+        <div class="col-sm-6 d-flex">
+
+            <img src="/img/banner/gambar_lain/undraw_dreamer_gxxi.svg" alt="">
+
         </div>
 
         <div class="col-sm-6 form-daft mt-4">
@@ -20,6 +20,7 @@
                         <h1 class="judul-daftar">Selamat Datang!</h1>
                         <h6 class="judul-item">Wah agar kamu bisa menikmati semua layanan Jajan kamu harus masuk dulu ya!</h6>
                     </div>
+
                     <div class="info-proses justify-content-center">
                         <ul id="progressbar">
                             <li id="daftar" class="active"></li>
@@ -27,16 +28,16 @@
                             <li id="selesai"></li>
                         </ul>
                     </div>
-                    <form class="daftar justify-content-center   @if (session('status2'))
-                    berhasil
-                    @endif" action="/register" method="post" id="1form" name="form1">
+                    <form class="daftar justify-content-center" action="/register" method="post" id="1form" name="form1">
                         @csrf
-                        <input type="text" class="form-control" name="name" placeholder="Nama lengkap" />
-                        @error('name'){{$message}}@enderror
-                        <input type="text" class="form-control" name="username" placeholder="Username" id="username" />
-                        @error('username'){{$message}}@enderror
-                        <input type="password" class="form-control" name="password" placeholder="Kata sandi" />
-                        <input type="password" class="form-control" name="password_confirmation" placeholder="Konfirmasi kata sandi" />
+                        <input type="text" class="form-control reg-nama" name="name" placeholder="Nama lengkap" autocomplete="off" />
+                        <div class="error-name invalid-feedback"></div>
+                        <input type="text" class="form-control reg-uname" name="username" placeholder="Username" id="username" autocomplete="off" />
+                        <div class="error-uname invalid-feedback"></div>
+                        <input type="password" class="form-control reg-pass" name="password" placeholder="Kata sandi" />
+                        <div class="error-pass invalid-feedback"></div>
+                        <input type="password" class="form-control reg-passcom" name="password_confirmation" placeholder="Konfirmasi kata sandi" />
+                        <div class="error-passcom invalid-feedback"></div>
                         <button type="submit" class="next action-button submit-1 shadow mb-5">Selanjutnya</button>
                     </form>
 
@@ -95,5 +96,5 @@
             </div>
 
         </div>
-
+        <script src="/js/axios.min.js"></script>
         @endsection()

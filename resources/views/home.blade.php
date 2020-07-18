@@ -1,9 +1,7 @@
 @extends('layout/main')
-
 @section('title' , 'Home | Laracode')
-
-
 @section('container')
+<!-- Corousel Jumbotron -->
 <div class="container mt-4">
     <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
         <ol class="carousel-indicators">
@@ -30,12 +28,13 @@
         </a>
     </div>
 </div>
+<!-- End of Corousel Jumbotron -->
 
-
+<!-- Kategori -->
 <div class="container mt-4 py-4">
     <h4 class="sub-heading-section my-3">Kategori</h4>
     <div class="row mt-3">
-        <div class="col-lg">
+        <div class="col-lg ">
             <a href="" class="btn btn-cat-section  py-2 ">
                 Fashion<span class="iconify float-right" data-icon="ic:round-navigate-next" data-inline="false" style="font-size: 25px;"></span>
             </a>
@@ -52,15 +51,15 @@
                 Aksesoris<span class="iconify float-right" data-icon="ic:round-navigate-next" data-inline="false" style="font-size: 25px;"></span>
             </a>
         </div>
-        <div class="col">
+        <div class="col product">
             <div class="card image-cat d-flex">
                 <img src="/img/kategori/pakaian/kaos.png" alt="lanyard">
                 <div class="card-img-overlay d-flex">
-                    <h4 class="card-title align-middle">Kaos</h4>
+                    <h4 class="card-title ">Kaos</h4>
                 </div>
             </div>
         </div>
-        <div class="col-lg">
+        <div class="col-lg product">
             <div class="card image-cat d-flex">
                 <img src="/img/kategori/pakaian/korsa.png" alt="lanyard">
                 <div class="card-img-overlay d-flex">
@@ -68,7 +67,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg">
+        <div class="col-lg product">
             <div class="card image-cat d-flex">
                 <img src="/img/kategori/pakaian/gelang.png" alt="lanyard">
                 <div class="card-img-overlay d-flex">
@@ -76,7 +75,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg">
+        <div class="col-lg product">
             <div class="card image-cat d-flex">
                 <img src="/img/kategori/pakaian/hoddie.png" alt="lanyard">
                 <div class="card-img-overlay d-flex">
@@ -84,7 +83,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-lg">
+        <div class="col-lg product">
             <div class="card image-cat d-flex">
                 <img src="/img/kategori/pakaian/jaket.png" alt="lanyard">
                 <div class="card-img-overlay d-flex">
@@ -100,43 +99,30 @@
     </div>
 
 </div>
+<!-- End of Kategori -->
 
 
-<hr>
-
-<!--  -->
-<div class="container">
+<!-- Promo -->
+<div class="container mt-5">
     <div class="row">
-        <div class="col-sm d-flex justify-content-center">
+        <div class="col d-flex justify-content-center">
             <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
-                
-            <div class="card image-cat d-flex" style="height: 330px;">
-                <!-- <img src="/img/etalase/img/144.svg" alt="lanyard" class="pamflet"> -->
-                <div class="card-body"id="grad1">
-                    <button href="#" class="btn btn-grad btn-md btn-block">Lihat Semua</button>
-                    <h4 class="card-title1">Hanya Untukmu</h4>
-                    <div class="card-title1 polkadot">
-                        <div  id="polkadot"></div>
-                    </div>
-                </div>        
-            </div>
-            
-            
-            <!-- <a href="">
-                    <div class="card image-cat d-flex" style="height: 330px;">
-                        <img src="/img/etalase/img/144.svg" alt="lanyard" class="pamflet">
-                        <div class="card-img-overlay d-flex">
-                            <h4 class="card-title1">Hanya Untukmu</h4>
-                            <button href="" class="btn card-btn">Lihat Semua</button>
+
+                <div class="card d-flex" style="height: 330px;">
+                    <div class="card-body" id="grad1">
+                        <div class="card-title1 polkadot">
+                            <div id="polkadot"></div>
                         </div>
+                        <h4 class="card-title1 mt-4 pt-5">Hanya Untukmu</h4>
+                        <a href="#" class="btn btn-grad mt-2">Lihat Semua</a>
                     </div>
-                </a> -->
+                </div>
             </div>
         </div>
         <?php for ($i = 0; $i < 4; $i++) : ?>
-            <div class="col-sm d-flex justify-content-center">
+            <div class="col d-flex justify-content-center product">
                 <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
-                    <a href="">
+                    <a href="#" style="text-decoration:none">
                         <img src="/img/etalase/4.jpg" class="card-img-top produk-img" alt="...">
                         <div class="card-body py-3" style="padding: 0;">
                             <h6 class="card-title">Kaos Oblong Dengan Bahan Terbaik</h6>
@@ -151,34 +137,26 @@
     </div>
 
     <div class="row">
-        <div class="col-sm d-flex justify-content-center">
+        <div class="col d-flex justify-content-center ">
             <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
-                
-            <div class="card image-cat d-flex" style="height: 330px;">
-                <!-- <img src="/img/etalase/img/144.svg" alt="lanyard" class="pamflet"> -->
-                <div class="card-body"id="grad2">
-                    <button href="#" class="btn btn-grad btn-md btn-block">Lihat Semua</button>
-                    <h4 class="card-title1">Hanya Untukmu</h4>
-                    <div class="card-title1 polkadot">
-                        <div  id="polkadot"></div>
-                    </div>
-                </div>        
-            </div>
-            
-            <!-- <a href="">
-                    <div class="card image-cat d-flex" style="height: 330px;">
-                        <img src="/img/etalase/img/Group 145.svg" alt="lanyard">
-                        <div class="card-img-overlay d-flex">
-                            <h4 class="card-title">Gelang</h4>
+
+                <div class="card  d-flex" style="height: 330px;">
+                    <div class="card-body" id="grad2">
+                        <div class="card-title1 polkadot">
+                            <div id="polkadot"></div>
                         </div>
+                        <h4 class="card-title1 mt-3 pt-4">Kasual keren buat kamu</h4>
+                        <a href="#" class="btn btn-grad mt-2">Lihat Semua</a>
                     </div>
-                </a> -->
+                </div>
+
+
             </div>
         </div>
         <?php for ($i = 0; $i < 4; $i++) : ?>
-            <div class="col-sm d-flex justify-content-center">
+            <div class="col d-flex justify-content-center product">
                 <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
-                    <a href="">
+                    <a href="#" style="text-decoration:none">
                         <img src="/img/etalase/4.jpg" class="card-img-top produk-img" alt="...">
                         <div class="card-body py-3" style="padding: 0;">
                             <h6 class="card-title">Kaos Oblong Dengan Bahan Terbaik</h6>
@@ -192,7 +170,9 @@
         <?php endfor ?>
     </div>
 </div>
+<!-- End of Promo -->
 
+<!-- Trending -->
 <div class="produk pb-4 mt-5">
     <div class="container">
         <div class="header-etalse mb-4">
@@ -202,7 +182,7 @@
                 </div>
                 <div class="col text-right">
                     <a href="" class="btn sortbtn mr-1 py-2"><span class="iconify mr-1" data-icon="bx:bx-sort-up" data-inline="false"></span>Urutkan</a>
-                    <a href="" class="btn filter px-3 py-2"><span class="iconify" data-icon="fa-solid:filter" style="font-size: 15px;"></span> Filter
+                    <a href="" class="btn sortbtn px-3 py-2"><span class="iconify" data-icon="fa-solid:filter" style="font-size: 15px;"></span> Filter
                     </a>
                 </div>
             </div>
@@ -212,7 +192,7 @@
     <div class="container">
         <div class="row ">
             <?php for ($i = 0; $i < 5; $i++) : ?>
-                <div class="col-sm d-flex justify-content-center">
+                <div class="col d-flex justify-content-center product">
                     <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
                         <a href="">
                             <img src="/img/etalase/4.jpg" class="card-img-top produk-img" alt="...">
@@ -226,6 +206,7 @@
                     </div>
                 </div>
             <?php endfor ?>
+
             <div class="col-sm-12">
                 <div class="ngelink">
                     <a href="">
@@ -236,8 +217,9 @@
         </div>
     </div>
 </div>
+<!-- End of Trending -->
 
-<hr>
+
 
 <!-- Makanan Enak yang wajib dicobain -->
 <div class="produk mt-3">
@@ -247,7 +229,7 @@
         </div>
         <div class="row">
             <?php for ($i = 0; $i < 5; $i++) : ?>
-                <div class="col-sm d-flex justify-content-center">
+                <div class="col d-flex justify-content-center product">
                     <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
                         <a href="">
                             <img src="/img/etalase/4.jpg" class="card-img-top produk-img" alt="...">
@@ -271,11 +253,10 @@
         </div>
     </div>
 </div>
+<!-- End of Makanan Enak yang wajib dicobain -->
 
 
-<hr>
-<!-- Biar muka tambah glowing -->
-
+<!-- Skincare-->
 <div class="produk mt-3">
     <div class="container">
         <div class="header-etalse">
@@ -283,7 +264,7 @@
         </div>
         <div class="row">
             <?php for ($i = 0; $i < 5; $i++) : ?>
-                <div class="col-lg d-flex justify-content-center">
+                <div class="col d-flex justify-content-center product">
                     <div class="card" style="width: 12rem; border-radius: 5px; border: none;">
                         <a href="">
                             <img src="/img/etalase/75e3633758052fde98e90a9f0b6613d9.jpg" class="card-img-top produk-img" alt="...">
@@ -307,16 +288,17 @@
         </div>
     </div>
 </div>
+<!-- End of Skincare-->
 
+<!-- Reg banner -->
 <div class="container mt-5 pb-3">
     <a href="/reg">
         <img src="/img/banner/foot.png" alt="" class="img-fluid">
     </a>
 </div>
+<!-- End of Reg banner -->
 
-
-
-
+<!-- Footer -->
 <div class="foter pb-5 pt-2 mt-4">
     <div class="container">
         <div class="footer-logo mt-3">
@@ -351,8 +333,9 @@
                     <p class="a">Mempunyai masalah saat menggunakan layanan kami? Hubungi jajan care melalui email berikut ini :</p>
                 </li>
                 <li><a href="">
-                        <p>lastgendeveloperteam@hotmail.com</p>
-                    </a></li>
+                        lastgendeveloperteam@hotmail.com
+                    </a>
+                </li>
                 <li>
                     <h5 class="sub-title-foot b">Temukan kami di media sosial kesayangan kamu</h5>
                 </li>
@@ -370,4 +353,6 @@
         </div>
     </div>
 </div>
+<!-- End of Footer -->
+
 @endsection()

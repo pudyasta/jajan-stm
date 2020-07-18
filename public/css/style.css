@@ -34,7 +34,7 @@
 .card.image-cat img {
     height: 100%;
 }
-.card.image-cat.pamflet{
+.card.image-cat.pamflet {
     height: 120%;
     width: 120%;
     margin-top: -20px;
@@ -47,7 +47,7 @@
     height: 100%;
     position: absolute;
     border-radius: 5px;
-    background-color: rgba(0, 0, 0, 0);
+    background-color: rgba(0, 0, 0, 0.2);
     left: 0;
     bottom: 0;
 }
@@ -66,59 +66,51 @@
 }
 .card-title1 {
     color: #fff;
-    position: relative;
     font-weight: 800;
     font-family: "Poppins";
     left: 0;
-    bottom:  4.5em;
-    margin: auto 0;
-    z-index: 2;
 }
-.card-title1::before {
-    content: "";
-    background-color: transparent;
-}
-#grad1 {
 
-    background: transparent linear-gradient(150deg, #FF77F2D9 0%, #9801bbfc 100%) 0% 0% no-repeat padding-box;
+#grad1 {
+    background: transparent
+        linear-gradient(150deg, #ff77f2d9 0%, #9801bbfc 100%) 0% 0% no-repeat
+        padding-box;
     border-radius: 5px;
 }
 #grad2 {
-
-    background: transparent linear-gradient(150deg, #bcf39ad9 0%, #00715cfc 100%) 0% 0% no-repeat padding-box;
+    background: transparent
+        linear-gradient(150deg, #bcf39ad9 0%, #00715cfc 100%) 0% 0% no-repeat
+        padding-box;
     border-radius: 5px;
 }
 
-.btn-grad{
-    background-color: white;
-    opacity: 41%;
-    margin-top: 15.7em;
-
-}
-.btn-grad::before:hover{
-    background-color: white;
+.btn-grad {
+    background-color: rgba(255, 255, 255, 0.5);
     color: white;
+    width: 100%;
 }
-.polkadot{
+.btn-grad:hover {
+    background-color: rgba(255, 255, 255, 0.8);
+    color: #1a1818;
+    width: 100%;
+}
+
+.polkadot {
     width: 90px;
     bottom: 337px;
     margin-left: 55px;
 }
-.polkadot::after{
-    content: "";
-    background-color: transparent;
-}
-#polkadot{
-    background-image:   radial-gradient(white 20%, transparent 20%),
-                        radial-gradient( white 20%, transparent 20%),
-                        radial-gradient( white 20%, transparent 20%),
-                        radial-gradient( white 20%, transparent 20%);
+
+#polkadot {
+    background-image: radial-gradient(white 20%, transparent 20%),
+        radial-gradient(white 20%, transparent 20%),
+        radial-gradient(white 20%, transparent 20%),
+        radial-gradient(white 20%, transparent 20%);
     background-position: 0 0, 0px 15px, 15px 0px, 15px 15px;
     background-size: 30px 30px;
-    height:100px;
+    height: 100px;
     width: 100%;
     opacity: 40%;
-    
 }
 /* Etalase */
 
@@ -135,10 +127,9 @@
     background-color: #c4007c2e;
     color: #c4007c;
 }
-
-.filter {
-    background-color: #c4007c2e;
-    color: #c4007c;
+.sortbtn:hover {
+    background-color: #c4007c;
+    color: #fff;
 }
 
 .produk a {
@@ -220,8 +211,8 @@ p.akhir {
         margin: 0;
     }
 }
-@media (max-width: 400px){
-    .polkadot{
+@media (max-width: 400px) {
+    .polkadot {
         margin-right: 30px;
     }
 }
