@@ -14,10 +14,12 @@ $(window).on("mousemove", function () {
 (function () {
     document.querySelector(".daftar").addEventListener("submit", function (e) {
         e.preventDefault();
+
         axios
             .post(this.action, {
                 name: document.querySelector(".reg-nama").value,
                 username: document.querySelector(".reg-uname").value,
+                email: document.querySelector(".reg-email").value,
                 password: document.querySelector(".reg-pass").value,
                 password_confirmation: document.querySelector(".reg-passcom")
                     .value,
@@ -28,7 +30,6 @@ $(window).on("mousemove", function () {
             })
             .catch((e) => {
                 const error = e.response.data.errors;
-                console.log(error);
                 if (error.name != undefined) {
                     $(".reg-nama").addClass("is-invalid");
                     $(".error-name").html(error.name);
@@ -42,6 +43,13 @@ $(window).on("mousemove", function () {
                 } else {
                     $(".reg-uname").removeClass("is-invalid");
                     $(".error-uname").html("");
+                }
+                if (error.email != undefined) {
+                    $(".reg-email").addClass("is-invalid");
+                    $(".error-email").html(error.username);
+                } else {
+                    $(".reg-email").removeClass("is-invalid");
+                    $(".error-email").html("");
                 }
                 if (error.password != undefined) {
                     $(".reg-pass").addClass("is-invalid");

@@ -2,6 +2,7 @@
 
 use App\Http\Controllers;
 use Illuminate\Support\Facades\Route;
+use Illuminate\Support\Facades\Auth;
 
 /*
 |--------------------------------------------------------------------------
@@ -16,9 +17,13 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', 'HomeController@index');
 
-Route::get('/logout', 'AuthController@logout')->name('logout');
 
 // hanya untuk tamu yg belum auth
-Route::post('/register', 'AuthController@postregister')->middleware('guest');
-Route::get('/reg', 'AuthController@getRegister')->middleware('guest')->name('register');
-Route::post('/reg', 'AuthController@postLogin');
+Route::post('/user/create', 'AuthController@postregister')->middleware('guest')->name('register');
+Route::get('/user/create', 'AuthController@getRegister')->middleware('guest');
+Route::post('/login', 'AuthController@postLogin');
+Route::get('/login', function () {
+    return redirect()->back();
+});
+
+Route::get('/logout', 'AuthController@logout')->name('logout');

@@ -7,13 +7,18 @@
         <ol class="carousel-indicators">
             <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
             <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            @if (!session()->has('key'))
             <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            @endif
         </ol>
         <div class="carousel-inner">
             <div class="carousel-item active">
+                @if (!session()->has('key'))
                 <img src="/img/banner/carousel/1.png" class="d-block w-100" alt="1">
+
             </div>
             <div class="carousel-item">
+                @endif
                 <img src="/img/banner/carousel/2.png" class="d-block w-100" alt="1">
             </div>
             <div class="carousel-item">
@@ -333,7 +338,9 @@
                     <p class="a">Mempunyai masalah saat menggunakan layanan kami? Hubungi jajan care melalui email berikut ini :</p>
                 </li>
                 <li><a href="">
-                        lastgendeveloperteam@hotmail.com
+                        <span>
+                            lastgendeveloperteam@ hotmail.com
+                        </span>
                     </a>
                 </li>
                 <li>

@@ -15,7 +15,7 @@ class AuthController extends Controller
 
     public function getRegister()
     {
-        return view('daftar');
+        return view('/daftar');
     }
 
 
@@ -24,12 +24,13 @@ class AuthController extends Controller
         $request->validate([
             'name' => 'required|max:255|min:5',
             'username' => 'required|unique:users|min:5',
+            'email' => 'required|unique:users',
             'password' => 'required|min:8|confirmed',
         ]);
         User::create([
             'name' => $request->name,
             'username' => $request->username,
-            'email' => "",
+            'email' => $request->email,
             'password' =>  bcrypt($request->password),
         ]);
 
@@ -41,22 +42,22 @@ class AuthController extends Controller
 
     public function postLogin(Request $request)
     {
-        $email = $request->email;
-        $password = $request->password;
+        // $email = $request->email;
+        // $password = $request->password;
 
-        $data = User::where('email', $email)->first();
-        if ($data) {
-            if (Hash::check($password, $data->password)) {
-                Session::put('name', $data->name);
-                Session::put('email', $data->email);
-                Session::put('key', TRUE);
-                return redirect('/');
-            } else {
-                return redirect('/')->with('alert', 'Password atau Email, Salah !');
-            }
+        // $data = User::where('email', $email)->first();
+        // if ($data) {
+        if (Auth::attempt(['email' => $request->email, 'password' => $request->password])) {
+            // Session::put('name', user->name);
+            // Session::put('email', Auth::user->email);
+            Session::put('key', TRUE);
+            return redirect('/');
         } else {
-            return redirect('/')->with('status', 'Password atau Email, Salah!');
+            return redirect('/')->with('status', 'Password atau Email, Salah !');
         }
+        // } else {
+        //     return redirect('/')->with('status', 'Password atau Email, Salah!');
+        // }
     }
 
     public function logout(Request $request)

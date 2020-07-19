@@ -76,14 +76,14 @@
                                 <div class="login-header pr-1">
                                     <h3 class="display-5">Masuk</h3>
                                 </div>
-                                <form action="/reg" method="post" class="mt-4 ">
+                                <form action="/login" method="post" class="mt-4 ">
                                     @csrf
                                     <input type="text" class="form-control mt-2  @if (session('status')) is-invalid  @endif" name="email" placeholder="Enter email" autocomplete="off">
                                     <input type="password" class="form-control mt-2 @if (session('status')) is-invalid  @endif" placeholder="Password" name="password" autocomplete="off">
                                     <button type="submit" class="btn-sub-login mt-3">Masuk</button>
                                 </form>
                                 <p class="text-center mt-4" style="color: #000;">Belum punya akun?</p>
-                                <a class="nav-link btn-cart px-3" href="{{route('register')}}" style="border: none; border-radius:4px;">Daftar</a>
+                                <a class="nav-link btn-cart px-3" href="/user/create" style="border: none; border-radius:4px;">Daftar</a>
                             </div>
                         </div>
                         @else
@@ -93,7 +93,7 @@
                         <div class="dropdown-menu login-drop user mt-3">
                             <div class="container text-center" style="display: block;">
                                 <img src="/img/user/ice.jpg" alt="" class=" rounded-circle shadow" width="150px">
-                                <h4 class="mt-3">{{Session::get('name')}}</h4>
+                                <h4 class="mt-3">{{Auth::user()->name}}</h4>
                             </div>
                             <div class="mt-3">
                                 <a class="dropdown-item" href="#">Profil</a>
