@@ -4,6 +4,89 @@
     border-radius: 50%;
 }
 
+/* modal cart */
+.modal-lg{
+    max-width: 580px;
+}
+
+.title-cart{
+    color: #c4007c;
+    font-family: 'SF Pro Display';
+}
+.header-cart{
+    background-color: #C4007C26;
+    margin: -16px -31px;
+    margin-bottom: 10px;
+    padding-top: 16px;
+}
+.cart-delete{
+    float: right;
+    text-decoration: none;
+    color: #c4007c;
+}
+.deskripsi-produk{
+    
+}
+.cart-toko{
+    margin: 0px -31px;
+}
+.select-product{
+    margin-left: 16px;
+}
+.cart-img img{
+    width: 100%;
+    height: 100%;
+    max-width: 70px;
+    max-height: 85px;
+    border-radius: 10px;
+}
+.col-qty > * {
+    vertical-align: middle; 
+  }
+  
+  .col-qty > input {
+    max-width: 1em;
+    outline-color: none;
+  }
+  .col-numeric p {
+    font: bold 1.8em helvetica;
+  }
+  
+  a.qty {
+    line-height: 0em;
+  }
+  
+.total-keranjang{
+    align-self: left;
+}
+.btn-batal{
+    width: 100%;
+    height: 100%;
+    max-width: 120px;
+    max-height: 40px;
+    color: #c4007c;
+    background-color: rgba(196, 0, 124, 0.1);
+    border: 2px solid rgb(196, 0, 124);
+    border-radius: 10px;
+}
+.btn-batal:hover{
+    background-color: #c4007c;
+    color: white;
+}
+.btn-konfirmasi{
+    width: 120px;
+    height: 40px;
+    color: #c4007c;
+    background-color: rgba(196, 0, 124, 0.1);
+    border: 2px solid rgb(196, 0, 124);
+    border-radius: 10px;
+}
+#numeric-qty:focus{
+    border-style: none;
+    outline: 0;
+}
+/* end of modal cart */
+
 /* kategori */
 
 .sub-heading-section {
@@ -210,6 +293,10 @@ p.akhir {
     .card.image-cat {
         margin: 0;
     }
+    .btn-batal{
+        margin: 0;
+    }
+    
 }
 @media (max-width: 400px) {
     .polkadot {
