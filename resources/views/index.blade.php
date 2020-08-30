@@ -66,21 +66,24 @@
                                     @endif" style="display: block;">
 
 
-                        <a href="" data-toggle="dropdown">
-                            <img src="/img/user/ice.jpg" alt="" class=" rounded-circle shadow-sm ml-3" width="50px">
-                        </a>
-                        <div class="dropdown-menu login-drop user mt-3">
-                            <div class="container text-center" style="display: block;">
-                                <img src="/img/user/ice.jpg" alt="" class=" rounded-circle shadow" width="150px">
-                                <h4 class="mt-3">{{Auth::user()->name}}</h4>
-                            </div>
-                            <div class="mt-3">
-                                <a class="dropdown-item" href="#">Profil</a>
-                                <a class="dropdown-item" href="#">Keranjang Belanja</a>
-                                <a class="dropdown-item" href="#">Barang Jualan</a>
-                                <div class="container">
-                                    <a class=" btn btn-sub-logout mt-4 py-2" href="/logout">Logout</a>
+                        <button class="btn-login px-4" data-toggle="dropdown" aria-expanded="@if (session('status'))true
+                                    @endif" autofocus>Masuk</button>
+
+                        <div class="dropdown-menu login-drop mt-3 @if (session('status'))
+                                    show
+                                    @endif">
+                            <div class="container" style="display: block;">
+                                <div class="login-header pr-1">
+                                    <h3 class="display-5">Masuk</h3>
                                 </div>
+                                <form action="/login" method="post" class="mt-4 ">
+                                    @csrf
+                                    <input type="text" class="form-control mt-2  @if (session('status')) is-invalid  @endif" name="email" placeholder="Enter email" autocomplete="off">
+                                    <input type="password" class="form-control mt-2 @if (session('status')) is-invalid  @endif" placeholder="Password" name="password" autocomplete="off">
+                                    <button type="submit" class="btn-sub-login mt-3">Masuk</button>
+                                </form>
+                                <p class="text-center mt-4" style="color: #000;">Belum punya akun?</p>
+                                <a class="nav-link btn-cart px-3" href="/user/create" style="border: none; border-radius:4px;">Daftar</a>
                             </div>
                         </div>
 
