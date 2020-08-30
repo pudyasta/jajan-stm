@@ -57,7 +57,7 @@ img {
 
 #msform .action-button {
     width: 80%;
-    background: #c4007c;
+    background-color: #c4007c;
     font-weight: bold;
     color: white;
     border: 0 none;
@@ -169,6 +169,11 @@ img {
 
 .second-page,
 .third-page {
+    display: inline;
+}
+
+.spin{
+    width:20px;
     display: none;
 }
 

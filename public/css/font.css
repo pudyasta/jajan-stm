@@ -3,8 +3,3 @@
     font-family: "SF Pro Display";
     src: url("/css/FontsFree-Net-SFProDisplay-Regular.ttf");
 }
-
-@font-face {
-    font-family: "SF Display";
-    src: url("https://sf.abarba.me/SF-UI-Display-Medium.otf");
-}
