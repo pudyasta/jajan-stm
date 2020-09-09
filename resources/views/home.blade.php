@@ -67,22 +67,46 @@
 
 
                         <a href="" data-toggle="dropdown">
-                            <img src="/img/user/ice.jpg" alt="" class=" rounded-circle shadow-sm ml-3" width="50px">
+                            <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-375-456327.png" alt="" class=" rounded-circle shadow-sm ml-3" width="50px">
                         </a>
-                        <div class="dropdown-menu login-drop user mt-3">
+                        <div class="dropdown-menu login-drop @if (Auth::user()->role=='admin') admin @elseif (Auth::user()->role=='guest') guest @else user @endif mt-3">
                             <div class="container text-center" style="display: block;">
-                                <img src="/img/user/ice.jpg" alt="" class=" rounded-circle shadow" width="150px">
-                                <h4 class="mt-3">{{Auth::user()->name}}</h4>
+                                <img src="https://cdn.iconscout.com/icon/free/png-512/avatar-375-456327.png" alt="" class=" rounded-circle shadow" width="120px">
+                                <h4 class="mt-3 name">{{Auth::user()->name}}</h4>
+                                <p class="username-text ">{{Auth::user()->username}}</p>
+                                @if(Auth::user()->role =="admin")
+                                <a class=" btn btn-sub-start" href="/dhasboard">Lihat Dhasboard</a>
+                                @elseif(Auth::user()->role =="seller")
+                                <a class=" btn btn-sub-daftar mt-0" href="/dhasboard"><span class="iconify" data-icon="entypo:shop" data-inline="false" style="margin: -1px 4px 0 0;"></span>Penjualan Saya</a>
+                                @elseif(Auth::user()->role =="buyer")
+                                <a class=" btn btn-sub-start" href="/dhasboard">Mulai jualan yuk</a>
+                                @else
+                                <a href="" class="warning">
+                                    <div class="alert alert-danger" role="alert">
+                                        <span class="iconify justify-content-center" data-icon="jam:triangle-danger" data-inline="false"></span><br>
+                                        Alamat kamu belum di tetapkan nih, klik disini untuk menambahkan alamat kamu!
+                                    </div>
+                                </a>
+                                @endif
                             </div>
+                            <hr class="mt-3" style="margin: 0px 10px; border-top:2px solid #dedede">
                             <div class="mt-3">
-                                <a class="dropdown-item" href="#">Profil</a>
-                                <a class="dropdown-item" href="#">Keranjang Belanja</a>
-                                <a class="dropdown-item" href="#">Barang Jualan</a>
-                                <div class="container">
-                                    <a class=" btn btn-sub-logout mt-4 py-2" href="/logout">Logout</a>
+                                @if(Auth::user()->role =="admin")
+                                <div class="mt-3">
+                                    <a class="dropdown-item" href="#">Laporan Pengunjung</a>
+                                    <a class="dropdown-item" href="#">Saran dan Masukan</a>
+                                    @else
+                                    <a class="dropdown-item" href="#">Pengaturan Akun</a>
+                                    <a class="dropdown-item" href="#">Status Pesanan</a>
+                                    <a class="dropdown-item" href="#">Review Produk</a>
+                                    <a class="dropdown-item" href="#">Bantuan</a>
+                                    @endif
+                                    <div class="container">
+                                        <a class=" btn btn-sub-logout mt-2" href="/logout">Keluar</a>
+                                    </div>
                                 </div>
+
                             </div>
-                        </div>
 
                     </li>
                 </ul>

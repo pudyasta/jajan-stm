@@ -1,12 +1,11 @@
-.col-img {
-    display: flex;
+.container .row{
+    height: 88vh;
 }
-
 img {
     width: 100%;
     position: relative;
-    margin: auto;
-    margin: auto;
+    
+    vertical-align: middle;
 }
 .btn-back .iconify {
     color: #c4007c;
@@ -38,14 +37,13 @@ img {
 #msform {
     text-align: center;
     position: relative;
+    margin:  auto;
 }
-
+#msform.confirm{
+    margin-top: 50px;
+}
 .form-card {
     text-align: center;
-}
-#msform {
-    margin: auto 30px;
-    float: center;
 }
 
 #msform input {
@@ -77,12 +75,16 @@ img {
     position: relative;
 }
 
+.info-proses{
+    display: flex;
+    margin-left: -20px;
+}
+
 #progressbar {
     overflow: hidden;
     color: lightgrey;
-    text-align: center;
     max-width: 335px;
-    margin-left: 130px;
+    margin: auto;
 }
 
 #progressbar .active {
@@ -96,6 +98,7 @@ img {
     float: left;
     position: relative;
     font-weight: 400;
+    margin: 10px;
 }
 
 #progressbar #daftar:before {
@@ -131,11 +134,11 @@ img {
 
 #progressbar li:after {
     content: "";
-    width: 100%;
+    width: 50px;
     height: 2px;
     background: lightgray;
     position: absolute;
-    left: 0;
+    left: -12px;
     top: 25px;
     z-index: 1;
 }
@@ -189,7 +192,5 @@ img {
         margin-top: 20px;
         margin-bottom: 10px;
     }
-    #progressbar {
-        margin-left: 102px;
-    }
+
 }

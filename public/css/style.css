@@ -24,9 +24,6 @@
     text-decoration: none;
     color: #c4007c;
 }
-.deskripsi-produk{
-    
-}
 .cart-toko{
     margin: 0px -31px;
 }
@@ -90,13 +87,14 @@
 /* kategori */
 
 .sub-heading-section {
-    font-family: "SF Display";
-    font-size: 30px;
+    font-family: "Poppins";
+    font-size: 35px;
+    font-weight: 500;
 }
 .btn-cat-section {
     width: 100%;
     color: #c4007c;
-    font-family: "SF Display";
+    font-family: "SF Pro Display";
     text-align: left;
     border: 1px solid #c4007c33;
     border-radius: 10px;

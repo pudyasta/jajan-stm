@@ -82,8 +82,8 @@
                                     <input type="password" class="form-control mt-2 @if (session('status')) is-invalid  @endif" placeholder="Password" name="password" autocomplete="off">
                                     <button type="submit" class="btn-sub-login mt-3">Masuk</button>
                                 </form>
-                                <p class="text-center mt-4" style="color: #000;">Belum punya akun?</p>
-                                <a class="nav-link btn-cart px-3" href="/user/create" style="border: none; border-radius:4px;">Daftar</a>
+                                <p class="text-center mt-3" style="color: #aaa;">Belum punya akun?</p>
+                                <a class="btn btn-sub-daftar px-3 py-2" href="/user/create">Daftar</a>
                             </div>
                         </div>
 

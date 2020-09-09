@@ -17,8 +17,9 @@ use Illuminate\Support\Facades\Auth;
 
 Route::get('/', 'HomeController@index')->name('home')->middleware('guest');
 
-Route::get('/home', 'HomeController@home')->middleware('confirmed');
+Route::get('/home', 'HomeController@home')->middleware(['confirmed', 'auth']);
 
+Route::get('/dhasboard', 'HomeController@admin')->middleware(['confirmed', 'auth', 'admin']);
 
 // hanya untuk tamu yg belum auth
 Route::post('/user/create', 'AuthController@postregister')->middleware('guest')->name('register');

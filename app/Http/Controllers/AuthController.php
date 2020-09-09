@@ -58,8 +58,8 @@ class AuthController extends Controller
         $user = User::where(['email' => $email, 'remember_token' => $remember_token])->first();
         if ($user) {
             User::where(['email' => $email, 'remember_token' => $remember_token])->update(['verified' => 1, 'remember_token' => NULL]);
-            return view('registration.confirmed');
             Auth::loginUsingId($user->id);
+            return view('registration.confirmed');
         } else {
             return redirect("/user/create");
         }
