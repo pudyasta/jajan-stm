@@ -30,7 +30,7 @@ Route::get('/user/confirm', function () {
     return view('registration.confirm');
 })->middleware(['auth', 'unconfirmed'])->name('confirm');
 
-Auth::routes(['verify' => true]);
+// Auth::routes(['verify' => true]);
 Route::post('/login', 'AuthController@postLogin');
 Route::get('/login', function () {
     return redirect()->back();

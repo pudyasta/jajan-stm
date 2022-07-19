@@ -133,7 +133,7 @@
                     @endif
                     <img src="/img/banner/carousel/2.png" class="d-block w-100" alt="1">
                 </div>
-                <div class="carousel-item">
+                <div class="carousel-item"> 
                     <img src="/img/banner/carousel/3.png" class="d-block w-100" alt="1">
                 </div>
             </div>
@@ -411,7 +411,7 @@
 
     <!-- Reg banner -->
     <div class="container mt-5 pb-3">
-        <a href="/reg">
+        <a href="/create">
             <img src="/img/banner/foot.png" alt="" class="img-fluid">
         </a>
     </div>

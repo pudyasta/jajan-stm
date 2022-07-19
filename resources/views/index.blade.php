@@ -388,7 +388,7 @@
 
     <!-- Reg banner -->
     <div class="container mt-5 pb-3">
-        <a href="/reg">
+        <a href="/user/create">
             <img src="/img/banner/foot.png" alt="" class="img-fluid">
         </a>
     </div>
